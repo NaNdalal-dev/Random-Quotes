@@ -29,7 +29,7 @@ le=1.0">
 <form action="/" method="post">
 <center>
 	<h1 class="text text-success">
-		Random Quotes
+		<font face="purisa"> Random Quotes </font>
 	</h1>
 </center>
 {% if quote %}
@@ -37,15 +37,17 @@ le=1.0">
 <div class="well" style="background-color:{{ color }};">
 <p><b>
 <q><q><q>
+	<font face="Karumbi" size=7>
 	{{ quote }}
+	</font>
 </q></q></q>
 </b></p>
 {% if author != nan %}
 	<div class="container">
-	<small style="color:white;"><b>{{ author }}</b></small>
+	<small style="color:white;"><b><font size=4>{{ author }}</font></b></small>
 	</div>
 {% else %}
-	<small>unknown</small>
+	<small style="color:white;"><b><font size=4>unknown</font></b></small>
 {% endif %}
 </div>
 </blockquote>
